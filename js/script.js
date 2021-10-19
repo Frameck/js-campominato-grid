@@ -51,19 +51,11 @@ function generateGridLayout(difficultyLevel) {
         box.style.width = boxWidth + '%'
         box.style.height = boxWidth + '%'
 
-        box.addEventListener('click', () => {
+        box.addEventListener('click', function() {
             this.classList.toggle("box-active")
             console.log(this)
         })
-
-        // box.addEventListener("click", onSingleCellClick)
         
         boxContainer.appendChild(box)
     }
 }
-
-
-
-// function onSingleCellClick() {
-//     this.classList.toggle("box-active");
-// }
